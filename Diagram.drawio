@@ -1,0 +1,43 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.5 Chrome/126.0.6478.183 Electron/31.3.0 Safari/537.36" version="24.7.5">
+  <diagram name="Page-1" id="Fz9N-IsvsVj3cbRoeW8t">
+    <mxGraphModel dx="2234" dy="836" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="DY2K5F41k_DyiTvd5HB5-11" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="-418" y="225" width="1129" height="159" as="geometry" />
+        </mxCell>
+        <mxCell id="DY2K5F41k_DyiTvd5HB5-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DY2K5F41k_DyiTvd5HB5-1" target="DY2K5F41k_DyiTvd5HB5-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DY2K5F41k_DyiTvd5HB5-1" value="v1/api/send (POST)&lt;div style=&quot;font-size: 17px;&quot;&gt;{&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;id: long&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 17px;&quot;&gt;message:string&lt;/div&gt;&lt;div style=&quot;font-size: 17px;&quot;&gt;createAt: timestamp&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;}&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="-356" y="251" width="257" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="DY2K5F41k_DyiTvd5HB5-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DY2K5F41k_DyiTvd5HB5-2" target="DY2K5F41k_DyiTvd5HB5-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DY2K5F41k_DyiTvd5HB5-2" value="Kafka Topic" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="180" y="56" width="284" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DY2K5F41k_DyiTvd5HB5-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=17;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="DY2K5F41k_DyiTvd5HB5-4" target="DY2K5F41k_DyiTvd5HB5-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DY2K5F41k_DyiTvd5HB5-4" value="Kafka Producer" style="rounded=0;whiteSpace=wrap;html=1;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="31" y="272" width="144" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DY2K5F41k_DyiTvd5HB5-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DY2K5F41k_DyiTvd5HB5-7" target="DY2K5F41k_DyiTvd5HB5-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DY2K5F41k_DyiTvd5HB5-7" value="Kafka Consumer" style="rounded=0;whiteSpace=wrap;html=1;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="482" y="272" width="144" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DY2K5F41k_DyiTvd5HB5-9" value="PostgreSQL" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="759" y="130" width="83" height="152" as="geometry" />
+        </mxCell>
+        <mxCell id="DY2K5F41k_DyiTvd5HB5-12" value="Atomic Component" style="rounded=0;whiteSpace=wrap;html=1;fontSize=17;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="28" y="402" width="188" height="45" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
