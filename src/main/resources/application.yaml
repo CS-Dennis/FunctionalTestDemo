@@ -2,3 +2,17 @@ spring:
   application:
     name: FunctionalTestDemo
 
+  datasource:
+    url: jdbc:postgresql://localhost:5432/functional_test_db
+    username: admin
+    password: admin
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+
