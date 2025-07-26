@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  redpanda:
+    image: redpandadata/redpanda:latest
+    container_name: redpanda
+    ports:
+      - "9092:9092" # Kafka client port
+      - "9644:9644" # Admin HTTP
+    command:
+      - redpanda
+      - start
+      - --overprovisioned
+      - --smp=1
+      - --memory=1G
+      - --reserve-memory=0M
+      - --node-id=0
+      - --check=false
+      - --kafka-addr=PLAINTEXT://0.0.0.0:9092
+      - --advertise-kafka-addr=PLAINTEXT://192.168.1.142:9092 # Replace with your host IP
+    volumes:
+      - redpanda_data:/var/lib/redpanda/data
+
+  kafka-ui:
+    image: redpandadata/console:latest
+    container_name: kafka-ui
+    ports:
+      - "8081:8080"
+    environment:
+      - KAFKA_BROKERS=192.168.1.142:9092 # Replace with your host IP
+    depends_on:
+      - redpanda
+
+volumes:
+  redpanda_data:
