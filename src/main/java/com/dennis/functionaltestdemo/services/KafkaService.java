@@ -23,7 +23,7 @@ public class KafkaService {
     public void listen(Book book) throws JsonProcessingException {
         // Process the incoming message
 
-       log.info("Received book: {}", objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(book));
+       log.info("Received book: \n{}", objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(book));
        Book newBook = Book.builder()
                .bookName(book.getBookName())
                .author(book.getAuthor())
