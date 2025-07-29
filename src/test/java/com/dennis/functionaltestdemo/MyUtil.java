@@ -15,7 +15,7 @@ public class MyUtil {
         return "Hello, World!";
     }
 
-    public static String getBookSN() {
+    public static String getBookSN(String SN) {
         System.out.println("connecting to database at " + DB_URL);
         Connection conn = null;
         PreparedStatement pstmt = null;
@@ -25,9 +25,8 @@ public class MyUtil {
             conn = DriverManager.getConnection(DB_URL, USER, PASSWORD);
             String sqlQuery = "SELECT * FROM book WHERE sn = ?";
             pstmt = conn.prepareStatement(sqlQuery);
-            pstmt.setString(1, "123");
+            pstmt.setString(1, SN);
 
-            int count = 0;
             int second = 1;
 
             while (second <= 60) {

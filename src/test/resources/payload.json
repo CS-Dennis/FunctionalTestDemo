@@ -1,8 +1,7 @@
 {
-  "author": "John Smith",
+  "author": "John Smith from the functional test",
   "createdAt": "2025-07-26T18:31:32.868036900Z",
   "updatedAt": "2025-07-26T18:31:32.868036900Z",
-  "sn": "7919da2b-0d6b-4ec2-bc44-5901f6191296",
-  "book_id": 12,
+  "book_id": null,
   "book_name": "Functional Test Book"
 }
